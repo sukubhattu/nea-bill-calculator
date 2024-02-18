@@ -1,0 +1,44 @@
+{
+  "tariffs": {
+    "ampere_5": {
+      "ranges": [
+        { "range": [0, 20], "minimum_charge": 30, "per_unit_cost": 0 },
+        { "range": [21, 30], "minimum_charge": 50, "per_unit_cost": 6.5 },
+        { "range": [31, 50], "minimum_charge": 50, "per_unit_cost": 8 },
+        { "range": [51, 100], "minimum_charge": 75, "per_unit_cost": 9.5 },
+        { "range": [101, 250], "minimum_charge": 100, "per_unit_cost": 9.5 },
+        { "range": [251, null], "minimum_charge": 150, "per_unit_cost": 11 }
+      ]
+    },
+    "ampere_15": {
+      "ranges": [
+        { "range": [0, 20], "minimum_charge": 50, "per_unit_cost": 4 },
+        { "range": [21, 30], "minimum_charge": 75, "per_unit_cost": 6.5 },
+        { "range": [31, 50], "minimum_charge": 75, "per_unit_cost": 8 },
+        { "range": [51, 100], "minimum_charge": 100, "per_unit_cost": 9.5 },
+        { "range": [101, 250], "minimum_charge": 125, "per_unit_cost": 9.5 },
+        { "range": [251, null], "minimum_charge": 175, "per_unit_cost": 11 }
+      ]
+    },
+    "ampere_30": {
+      "ranges": [
+        { "range": [0, 20], "minimum_charge": 75, "per_unit_cost": 5 },
+        { "range": [21, 30], "minimum_charge": 100, "per_unit_cost": 6.5 },
+        { "range": [31, 50], "minimum_charge": 100, "per_unit_cost": 8 },
+        { "range": [51, 100], "minimum_charge": 125, "per_unit_cost": 9.5 },
+        { "range": [101, 250], "minimum_charge": 150, "per_unit_cost": 9.5 },
+        { "range": [251, null], "minimum_charge": 200, "per_unit_cost": 11 }
+      ]
+    },
+    "ampere_60": {
+      "ranges": [
+        { "range": [0, 20], "minimum_charge": 125, "per_unit_cost": 6 },
+        { "range": [21, 30], "minimum_charge": 125, "per_unit_cost": 6.5 },
+        { "range": [31, 50], "minimum_charge": 125, "per_unit_cost": 8 },
+        { "range": [51, 100], "minimum_charge": 150, "per_unit_cost": 9.5 },
+        { "range": [101, 250], "minimum_charge": 200, "per_unit_cost": 9.5 },
+        { "range": [251, null], "minimum_charge": 250, "per_unit_cost": 11 }
+      ]
+    }
+  }
+}

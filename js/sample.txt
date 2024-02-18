@@ -1,0 +1,11 @@
+ampere = "5";
+value = 21;
+
+data = data[`ampere_${ampere}`]["ranges"];
+let result = {};
+data.forEach((item) => {
+  if (value >= item["range"][0] && value <= item["range"][1]) {
+    result = { ...result, item };
+  }
+});
+console.log(result);

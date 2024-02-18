@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Nea Bill Calculator</title>
+  </head>
+
+  <body>
+    <form id="nea-bill">
+      <label for="ampere-selector">Select Ampere:</label>
+      <select id="ampere-selector">
+        <option value="5">5 Ampere</option>
+        <option value="15">15 Ampere</option>
+        <option value="30">30 Ampere</option>
+        <option value="60">60 Ampere</option>
+      </select>
+      <label for="units">Please enter units</label>
+      <input type="number" id="units" name="units">
+      <input type="submit" value="Calculate Bill Amount" id='calculate-submit' disabled>
+    </form>
+    <section class="bill-details-output">
+      <p>Minimum Energy Charge: <span id="min-energy-charge"></span></p>
+      <table id="bill-details" border="1">
+        <thead>
+          <tr>
+            <th>Units Range</th>
+            <th>Per Unit Cost</th>
+            <th>Cumulative Price</th>
+          </tr>
+        </thead>
+        <tbody id="bill-details-body">
+        </tbody>
+      </table>
+    </section>
+  </body>
+  <script src=" ./js/main.js"></script>
+
+</html>

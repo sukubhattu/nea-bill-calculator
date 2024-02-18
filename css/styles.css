@@ -1,0 +1,28 @@
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#nea-bill {
+  margin-top: 50px;
+}
+#nea-bill input[type=submit] {
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: rgb(58, 197, 58);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+#nea-bill input[type=submit]:disabled {
+  background-color: gray;
+}
+
+#bill-details-body tr:last-child {
+  background: gray;
+}
+
+.bill-details-output {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
