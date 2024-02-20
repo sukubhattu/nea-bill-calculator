@@ -1,19 +1,59 @@
-#nea-bill{
+#nea-bill {
   margin-top: 50px;
-  input[type="submit"]{
-    display: inline-block;
-    padding: 7px 20px;
-    background-color: rgb(58, 197, 58);
+  width: 40%;
+
+  input[type="submit"] {
+    // display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: rgb(56, 179, 56);
     border: none;
     border-radius: 5px;
-    color: white
+    color: white;
   }
-  input[type="submit"]:disabled{
+  input[type="submit"]:disabled {
     background-color: gray;
   }
+  label {
+    color: green;
+    // display: inline-block;
+    margin-bottom: 5px;
+  }
 }
-#bill-details-body tr:last-child { background:gray; }
+#bill-details-body tr:last-child {
+  background: gray;
+}
+
+#ampere-selector,
+#units {
+  display: block;
+  margin-bottom: 20px;
+  min-width: 250px;
+  padding: 5px;
+  border: 1px solid rgb(200, 197, 197);
+  border-radius: 5px;
+}
 
 .bill-details-output {
   display: none;
 }
+
+#calculate-submit {
+  border-radius: 5px;
+  border: 1px solid rgb(200, 197, 197);
+}
+
+.bill-details-output{
+  width: 600px;
+}
+
+table {
+  border-collapse: collapse; 
+  width: 600px;
+  }
+  thead {
+  background-color: #f2f2f2;
+  border: none;
+  text-align: left; 
+  padding: 8px; 
+  }
