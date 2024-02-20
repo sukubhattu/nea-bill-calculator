@@ -2,7 +2,7 @@
   "tariffs": {
     "ampere_5": {
       "ranges": [
-        { "range": [0, 20], "minimum_charge": 30, "per_unit_cost": 0 },
+        { "range": [0, 20], "minimum_charge": 30, "per_unit_cost": 3 },
         { "range": [21, 30], "minimum_charge": 50, "per_unit_cost": 6.5 },
         { "range": [31, 50], "minimum_charge": 50, "per_unit_cost": 8 },
         { "range": [51, 100], "minimum_charge": 75, "per_unit_cost": 9.5 },

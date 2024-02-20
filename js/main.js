@@ -54,7 +54,7 @@ function calculateBillAmount(pricing, ampere, units) {
     tableOutput.push({
       bracket: `${pricing["ranges"][0]["range"][0]}-${pricing["ranges"][0]["range"][1]}`,
       perUnitCost: 0,
-      cumulative: pricing["ranges"][0]["minimum_charge"],
+      cumulative: pricing["ranges"][0]["range"][0],
     });
     tableOutput.push({
       bracket: "total amount",
@@ -105,11 +105,11 @@ function populateResults(tableOutput, minimumCharge) {
     let tr = document.createElement("tr");
     let perUnitCost = item.perUnitCost !== null ? item.perUnitCost : "";
     tr.innerHTML =
-      "<td>" +
+      "<td class='text-start'>" +
       item.bracket +
-      "</td><td>" +
+      "</td><td class='text-start'>" +
       perUnitCost +
-      "</td><td>" +
+      "</td><td class='text-start'>" +
       item.cumulative +
       "</td>";
     tbody.appendChild(tr);
