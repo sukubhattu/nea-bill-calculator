@@ -50,7 +50,7 @@ neaForm.addEventListener("submit", function (event) {
 
 function calculateBillAmount(pricing, ampere, units) {
   let tableOutput = [];
-  if (ampere === 5 && units <= 20) {
+  if (ampere == 5 && units <= 20) {
     tableOutput.push({
       bracket: `${pricing["ranges"][0]["range"][0]}-${pricing["ranges"][0]["range"][1]}`,
       perUnitCost: 0,
