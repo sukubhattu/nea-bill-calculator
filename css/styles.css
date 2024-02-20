@@ -61,4 +61,10 @@ thead {
   border: none;
   text-align: left;
   padding: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  #nea-bill {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
