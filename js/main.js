@@ -48,7 +48,8 @@ neaForm.addEventListener("submit", function (event) {
   populateResults(results[0], results[1]);
 });
 
-function calculateBillAmount(pricing, ampere, units) {
+function calculateBillAmount(originalPricing, ampere, units) {
+  let pricing = JSON.parse(JSON.stringify(originalPricing));
   let tableOutput = [];
   if (ampere == 5 && units <= 20) {
     tableOutput.push({
